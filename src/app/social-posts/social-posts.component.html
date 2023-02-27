@@ -1,0 +1,8 @@
+<app-single-post *ngFor="let p of Posts" [DisplayPosts]="p"></app-single-post>
+
+<button (click)="TogglePost()">hide</button>
+
+<app-post-form *ngIf="Hide" (PostCreated)="AddPost($event)"></app-post-form>
+
+<!-- <button (click)="TogglePost()">hide</button> -->
+
